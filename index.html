@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/background.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Star Trek Search App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <!-- <div class="clouds"></div> -->
+      <header>
+        <h1>Star Trek Search App</h1>
+        <h3>Search for movies, characters and whole lot more...</h3>
+      </header>
+
+      <div class="container">
+        <label for="category">Select a category</label>
+        <select name="category" id="category">
+          <option value="">--Select a category--</option>
+          <option value="astronomicalObject">Astronomical Object</option>
+          <option value="character">Character</option>
+          <option value="location">Location</option>
+          <option value="movie">Movie</option>
+          <option value="season">Season</option>
+          <option value="series">Series</option>
+          <option value="spacecraft">Spacecraft</option>
+          <option value="species">Species</option>
+          <option value="technology">Technology</option>
+          <option value="weapon">Weapon</option>
+        </select>
+        <!-- <input type="text" name="input" id="input" placeholder="Enter query here" /> -->
+        <p id="error" class="error"></p>
+        <button id="button" class="button">Search</button>
+      </div>
+      <div class="result">
+        <ul id="answer"></ul>
+      </div>
+      <button id="buttonClear" class="button">Clear</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
