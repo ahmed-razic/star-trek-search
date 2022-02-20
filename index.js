@@ -3,7 +3,6 @@ const stRequest = new XMLHttpRequest();
 let query = '';
 let userInput = 'search';
 let category = '';
-let nameCategory = '';
 
 //define const variables for DOM elements
 const inputSelector = document.querySelector('#input');
